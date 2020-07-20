@@ -11,8 +11,8 @@ COPY model_data /app/model_data
 
 ## Step 3:
 # Install packages from requirements.txt
-# hadolint ignore=DL3013
 COPY requirements.txt /app
+# hadolint ignore=DL3013
 RUN pip install --upgrade pip &&\
     pip install -r requirements.txt
 
